@@ -1,0 +1,90 @@
+@import '~style/helpers';
+
+.container {
+  background-image: url('../../assets/backgrounds/purplesky.jpeg');
+  color: #fff;
+  width: 768px;
+  height: 1024px;
+  text-align: center;
+  padding-top: 120px;
+  margin: 0 auto;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	color: whitesmoke;
+}
+
+.searchBox {
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+input {
+	font-size: 1.7em;
+	text-align: center;
+	width: 70%;
+	background-color: transparent;
+	color: whitesmoke;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom-width: 2px;
+	border-color: rgba(255, 255, 255, 0.424);
+	font-weight: bold;
+}
+
+input::placeholder {
+	color: LightGray;
+}
+
+.timeName {
+	margin: 0 auto;
+	font-size: 20px;
+	padding: 10px 10px;
+	display: block;
+	background: white;
+	border: 1px solid #fff;
+	color: black;
+	font-weight: 300;
+	border-radius: 7px;
+	transition: all 0.3s ease-in-out;
+	width: 225px;
+	height: 50px;
+}
+.timeName:hover {
+	background: transparent;
+	color: black;
+	border: 1px solid black;
+}
+
+.conditions {
+	flex: 1;
+	font-size: 1.5em;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.temperature {
+	flex: 2;
+	margin-top: 0;
+	font-size: 4.8em;
+	font-weight: 300;
+	letter-spacing: -5px;
+}
+
+.degrees:after {
+	content: "°C";
+	margin: 3px;
+	font-size: 0.5em;
+	font-weight: 100;
+	display: inline-block;
+	padding-top: 10px;
+	vertical-align: top;
+}
+
